@@ -1,0 +1,14 @@
+2022-04-30 06:00:01,404  INFO [main] HomePageTest:28 - launching chrome browser
+2022-04-30 06:00:01,620  INFO [main] HomePageTest:31 - Entering application URL
+2022-04-30 06:00:01,622 FATAL [main] HomePageTest:32 - just fatal error
+2022-04-30 06:00:02,143  INFO [main] HomePageTest:38 - loging page title
+2022-04-30 06:00:44,222  INFO [main] HomePageTest:28 - launching chrome browser
+2022-04-30 06:00:44,226  INFO [main] HomePageTest:31 - Entering application URL
+2022-04-30 06:00:44,228 FATAL [main] HomePageTest:32 - just fatal error
+2022-05-03 21:25:32,589  INFO [main] HomePageTest:37 - launching chrome browser
+2022-05-03 21:25:32,590  INFO [main] HomePageTest:38 - Entering application URL
+2022-05-03 21:25:32,591 FATAL [main] HomePageTest:39 - just fatal error
+2022-05-03 21:25:32,602  INFO [main] HomePageTest:45 - loging page title
+2022-05-03 21:25:39,803  INFO [main] HomePageTest:37 - launching chrome browser
+2022-05-03 21:25:39,803  INFO [main] HomePageTest:38 - Entering application URL
+2022-05-03 21:25:39,804 FATAL [main] HomePageTest:39 - just fatal error

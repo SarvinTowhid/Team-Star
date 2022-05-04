@@ -1,0 +1,1352 @@
+{
+	"info": {
+		"_postman_id": "fd406bf8-ac05-444b-8c29-47655d3c7427",
+		"name": "BootCamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EmployeeDetails",
+			"item": [
+				{
+					"name": "Scenario_01: Get all data from EmployeeDetaills",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/EmployeeDetails",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"EmployeeDetails"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_01: Get all data from EmployeeDetaills",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{endpoint}}/EmployeeDetails",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"EmployeeDetails"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"40a-KsF+vGxqd3drbGsyjP1flZffGT8\""
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 09:05:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 202,\n        \"lastName\": \"Patterson\",\n        \"firstName\": \"Mary\",\n        \"email\": \"mpatterso@classicmodelcars.com\",\n        \"jobTitle\": \"VP Sales\"\n    },\n    {\n        \"id\": 203,\n        \"lastName\": \"Tom\",\n        \"firstName\": \"Tom\",\n        \"email\": \"mpatterso@classicmodelcars.com\",\n        \"jobTitle\": \"VP Sales\"\n    },\n    {\n        \"id\": 100,\n        \"lastName\": \"Towhid\",\n        \"firstName\": \"Sarvin\",\n        \"email\": \"mpatterso@classicmodelcars.com\",\n        \"jobTitle\": \"Automation\"\n    },\n    {\n        \"id\": 101,\n        \"LastName\": \"Ahmed\",\n        \"firstName\": \"Arman\",\n        \"email\": \"mpatterso@classicmodelcars.com\",\n        \"jobTitle\": \"VP Sales\"\n    },\n    {\n        \"id\": 110,\n        \"lastName\": \"Khan\",\n        \"firstName\": \"Afridi\",\n        \"email\": \"afridikhan@classicmodelcars.com\",\n        \"jobTitle\": \"Automation\"\n    },\n    {\n        \"id\": 209,\n        \"lastName\": \"Murphy\",\n        \"firstName\": \"Diane\",\n        \"email\": \"dmurphy@classicmodelcars.com\",\n        \"jobTitle\": \"President\"\n    },\n    {\n        \"id\": 409,\n        \"lastName\": \"towhid\",\n        \"firstName\": \"nav\",\n        \"email\": \"navt@hotmail.com\",\n        \"jobTitle\": \"Tester\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Scenario_02: Create a new employee details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 409,\r\n        \"lastName\": \"towhid\",\r\n        \"firstName\": \"nav\",\r\n        \"email\": \"navt@hotmail.com\",\r\n        \"jobTitle\": \"Tester\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/EmployeeDetails",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"EmployeeDetails"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_02: Create a new employee details",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"id\": 409,\r\n        \"lastName\": \"towhid\",\r\n        \"firstName\": \"nav\",\r\n        \"email\": \"navt@hotmail.com\",\r\n        \"jobTitle\": \"Tester\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{endpoint}}/EmployeeDetails",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"EmployeeDetails"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Location"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:3000/EmployeeDetails/409"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "116"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"74-XH60Puxs0HiWFEeVMWYa1Dp7ZfQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 08:41:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 409,\n    \"lastName\": \"towhid\",\n    \"firstName\": \"nav\",\n    \"email\": \"navt@hotmail.com\",\n    \"jobTitle\": \"Tester\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Scenario_03: Update jobtital for a particular customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 100,\r\n    \"lastName\": \"Towhid\",\r\n    \"firstName\": \"Sarvin\",\r\n    \"email\": \"mpatterso@classicmodelcars.com\",\r\n    \"jobTitle\": \"Automation\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/EmployeeDetails/100",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"EmployeeDetails",
+								"100"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_03: Update jobtital for a particular customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 100,\r\n    \"lastName\": \"Towhid\",\r\n    \"firstName\": \"Sarvin\",\r\n    \"email\": \"mpatterso@classicmodelcars.com\",\r\n    \"jobTitle\": \"Automation\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{endpoint}}/EmployeeDetails/100",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"EmployeeDetails",
+										"100"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"89-9J8MSVhA/avqVw54eYH4m6/RCck\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 08:45:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 100,\n    \"lastName\": \"Towhid\",\n    \"firstName\": \"Sarvin\",\n    \"email\": \"mpatterso@classicmodelcars.com\",\n    \"jobTitle\": \"Automation\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Scenario_04: Delet a employee detaills",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/EmployeeDetails/201",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"EmployeeDetails",
+								"201"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "201",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_04: Delet a record",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{endpoint}}/EmployeeDetails/201",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"EmployeeDetails",
+										"201"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "201",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 09:04:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Scenario_01: Get customers where state is Al",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/Customers?State=AL",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"Customers"
+							],
+							"query": [
+								{
+									"key": "State",
+									"value": "AL"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_01: Get customers where state is Al",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{endpoint}}/Customers?State=AL",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"Customers"
+									],
+									"query": [
+										{
+											"key": "State",
+											"value": "AL"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "99"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"63-3HJNqErbTPPpF1/cH47qQS/HuJI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 10:23:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 100,\n        \"name\": \"Sarvin Towhid\",\n        \"city\": \"Birmingham\",\n        \"State\": \"AL\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Scenario_02: add a new customer without name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first name\": ,\r\n    \"last name\": \"Tuhin\",\r\n    \"phone no\": \"205-000-0000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/Customers",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"Customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_02: add a new customer without name",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first name\": ,\r\n    \"last name\": \"Tuhin\",\r\n    \"phone no\": \"205-000-0000\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{endpoint}}/Customers",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"Customers"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 09:33:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>Error</title>\n    </head>\n    <body>\n        <pre>SyntaxError: Unexpected token , in JSON at position 21\n            <br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)\n            <br> &nbsp; &nbsp;at parse (C:\\Users\\ktowh\\AppData\\Local\\npm-cache\\_npx\\aff12940958e4bf4\\node_modules\\body-parser\\lib\\types\\json.js:89:19)\n            <br> &nbsp; &nbsp;at C:\\Users\\ktowh\\AppData\\Local\\npm-cache\\_npx\\aff12940958e4bf4\\node_modules\\body-parser\\lib\\read.js:128:18\n            <br> &nbsp; &nbsp;at AsyncResource.runInAsyncScope (node:async_hooks:201:9)\n            <br> &nbsp; &nbsp;at invokeCallback (C:\\Users\\ktowh\\AppData\\Local\\npm-cache\\_npx\\aff12940958e4bf4\\node_modules\\raw-body\\index.js:231:16)\n            <br> &nbsp; &nbsp;at done (C:\\Users\\ktowh\\AppData\\Local\\npm-cache\\_npx\\aff12940958e4bf4\\node_modules\\raw-body\\index.js:220:7)\n            <br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\\Users\\ktowh\\AppData\\Local\\npm-cache\\_npx\\aff12940958e4bf4\\node_modules\\raw-body\\index.js:280:7)\n            <br> &nbsp; &nbsp;at IncomingMessage.emit (node:events:538:35)\n            <br> &nbsp; &nbsp;at endReadableNT (node:internal/streams/readable:1345:12)\n            <br> &nbsp; &nbsp;at processTicksAndRejections (node:internal/process/task_queues:83:21)\n        </pre>\n    </body>\n</html>"
+						}
+					]
+				},
+				{
+					"name": "Scenario_03: Update phone no information for a particular customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 105,\r\n        \"name\": \"Mim Hasan\",\r\n        \"city\": \"Orlando\",\r\n        \"State\": \"FL\",\r\n        \"phone no\":\"205-111-1111\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/Customers/105",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"Customers",
+								"105"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_03: Update phone no information for a particular customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"id\": 105,\r\n        \"name\": \"Mim Hasan\",\r\n        \"city\": \"Orlando\",\r\n        \"State\": \"FL\",\r\n        \"phone no\":\"205-111-1111\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{endpoint}}/Customers/105",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"Customers",
+										"105"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "106"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6a-0fLH6dhToQdyJhtsGitvmI+KYIE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 10:19:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 105,\n    \"name\": \"Mim Hasan\",\n    \"city\": \"Orlando\",\n    \"State\": \"FL\",\n    \"phone no\": \"205-111-1111\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Scenario_04: Delet a customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/Customers/101",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"Customers",
+								"101"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_04: Delet a customer",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{endpoint}}/Customers/101",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"Customers",
+										"101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 10:23:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "Scenario_01: Get all the address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/Address",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"Address"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_01: Get all the address",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{endpoint}}/Address",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"Address"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "412"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19c-GmsSY1IZVsSKTqdMC2UzZUTWjOw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 10:30:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 100,\n        \"Address\": \"1010 iveye road ln\",\n        \"city\": \"Birmingham\",\n        \"State\": \"AL\"\n    },\n    {\n        \"id\": 101,\n        \"Address\": \"1000 iveye road ln\",\n        \"city\": \"Montgomery\",\n        \"State\": \"AL\"\n    },\n    {\n        \"id\": 102,\n        \"Address\": \"1020 belpes bend\",\n        \"city\": \"Austin\",\n        \"State\": \"TX\"\n    },\n    {\n        \"id\": 103,\n        \"Address\": \"1030 iveye road ln\",\n        \"city\": \"Hudson\",\n        \"State\": \"NY\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Scenario_20: Insert a new address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 108,\r\n        \"Address\": \"1030 hawavaban road ln\",\r\n        \"city\": \"Dhaka\",\r\n        \"State\": \"BD\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/Address",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"Address"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_20: Insert a new address",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"id\": 108,\r\n        \"Address\": \"1030 hawavaban road ln\",\r\n        \"city\": \"Dhaka\",\r\n        \"State\": \"BD\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{endpoint}}/Address",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"Address"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Location"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:3000/Address/108"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5a-9ylh3CtJTPjf7p3Uux/JU2KXwq4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 10:32:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 108,\n    \"Address\": \"1030 hawavaban road ln\",\n    \"city\": \"Dhaka\",\n    \"State\": \"BD\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Scenario_03: Update address for a particular customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 108,\r\n    \"Address\": \"1030 hawavaban road ln\",\r\n    \"city\": \"Dhaka\",\r\n    \"State\": \"BD\",\r\n    \"phone no\": \"256-111-1111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/Address/108",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"Address",
+								"108"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_03: Update address for a particular customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 108,\r\n    \"Address\": \"1030 hawavaban road ln\",\r\n    \"city\": \"Dhaka\",\r\n    \"State\": \"BD\",\r\n    \"phone no\": \"256-111-1111\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{endpoint}}/Address/108",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"Address",
+										"108"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"78-1VhSRd8jel0++vHZ4tu+bxjMUtU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 10:34:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 108,\n    \"Address\": \"1030 hawavaban road ln\",\n    \"city\": \"Dhaka\",\n    \"State\": \"BD\",\n    \"phone no\": \"256-111-1111\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Scenario_04: Delet a particular address",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/Address/103",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"Address",
+								"103"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Scenario_04: Delet a particular address",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{endpoint}}/Address/103",
+									"host": [
+										"{{endpoint}}"
+									],
+									"path": [
+										"Address",
+										"103"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Apr 2022 10:35:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
